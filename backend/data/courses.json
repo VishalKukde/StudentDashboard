@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "React Foundations",
+    "description": "React Foundations for progressive student growth and project readiness.",
+    "level": "Beginner",
+    "order": 1,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "Node.js Essentials",
+    "description": "Node.js Essentials for progressive student growth and project readiness.",
+    "level": "Beginner",
+    "order": 2,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "MongoDB Mastery",
+    "description": "MongoDB Mastery for progressive student growth and project readiness.",
+    "level": "Beginner",
+    "order": 3,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "Express API Design",
+    "description": "Express API Design for progressive student growth and project readiness.",
+    "level": "Intermediate",
+    "order": 4,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "JavaScript for Dashboards",
+    "description": "JavaScript for Dashboards for progressive student growth and project readiness.",
+    "level": "Intermediate",
+    "order": 5,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "Data Visualization with Recharts",
+    "description": "Data Visualization with Recharts for progressive student growth and project readiness.",
+    "level": "Intermediate",
+    "order": 6,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "bbfe762a-6034-4845-a284-7228035dea68",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "Authentication and Security",
+    "description": "Authentication and Security for progressive student growth and project readiness.",
+    "level": "Intermediate",
+    "order": 7,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "MERN Project Architecture",
+    "description": "MERN Project Architecture for progressive student growth and project readiness.",
+    "level": "Advanced",
+    "order": 8,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "Testing Web Apps",
+    "description": "Testing Web Apps for progressive student growth and project readiness.",
+    "level": "Advanced",
+    "order": 9,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  },
+  {
+    "_id": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "createdAt": "2026-06-06T06:51:45.575Z",
+    "updatedAt": "2026-06-06T06:51:45.575Z",
+    "title": "Deployment and Monitoring",
+    "description": "Deployment and Monitoring for progressive student growth and project readiness.",
+    "level": "Advanced",
+    "order": 10,
+    "tags": [
+      "mern",
+      "dashboard",
+      "learning"
+    ]
+  }
+]

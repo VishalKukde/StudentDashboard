@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "3416e9b9-005e-4ec9-b8f2-92912a8ac90f",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Aarav Student",
+    "email": "student1@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "f6c25f40-28e7-437d-98fd-676e038112d3",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Ishita Student",
+    "email": "student2@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "3e52cce1-9e51-4e6a-a61d-45089aa14eff",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Kabir Student",
+    "email": "student3@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "d5354c98-0462-46ce-b0c1-3eeb82222e64",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Ananya Student",
+    "email": "student4@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "7f0df8a8-96ec-483c-842c-7d7a7c8f237e",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Rohan Student",
+    "email": "student5@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "24ba6c3e-8b2a-49b7-b4c7-41da620b3bb0",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Meera Student",
+    "email": "student6@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "d45303d0-1968-40fb-8bf1-e3a806e22fd6",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Vihaan Student",
+    "email": "student7@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "b2ddb05b-d309-4b3b-ad8f-4920700798ea",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Sara Student",
+    "email": "student8@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "6db06859-e64f-43c0-9ed5-d4a77a285e77",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Arjun Student",
+    "email": "student9@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "81fb2406-063f-4bc4-ac59-1880033f45ea",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Naina Student",
+    "email": "student10@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "3239239c-018f-4a0b-ba7a-cc7c81692a4e",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Aditya Student",
+    "email": "student11@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "22de6a66-ae80-4123-8484-fd99e47e5b19",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Pooja Student",
+    "email": "student12@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "c4ebfb8f-a4a0-4665-9ec8-3420d6efabcf",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Tara Student",
+    "email": "student13@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "9f6273a0-75c8-4c32-8058-5fac3b02580c",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Karan Student",
+    "email": "student14@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "3b8cf650-6b4c-479a-8860-ef92076e3652",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Diya Student",
+    "email": "student15@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "d7d48848-f2c4-4d33-a6ad-292bf3045328",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Rahul Student",
+    "email": "student16@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "7f1aa616-668f-4775-bce7-ddda4acae96d",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Sanjana Student",
+    "email": "student17@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "8a4eb557-d2d2-4162-9b07-03c2b424be73",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Asha Student",
+    "email": "student18@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "6dc5c4e6-0833-4c11-9cc9-c0749bcfc122",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Neil Student",
+    "email": "student19@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "b0eeee5d-35b6-4b6b-bb9a-c8ee6ec05faa",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Kavya Student",
+    "email": "student20@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "student"
+  },
+  {
+    "_id": "e442b818-2613-4fb7-8f84-baaa755e3dec",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Meera Mentor",
+    "email": "mentor1@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "mentor"
+  },
+  {
+    "_id": "b3a61362-a07e-4d02-b4d0-0fcfc133179d",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Vihaan Mentor",
+    "email": "mentor2@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "mentor"
+  },
+  {
+    "_id": "c989a656-e055-4886-9493-12af003b79f1",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Sara Mentor",
+    "email": "mentor3@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "mentor"
+  },
+  {
+    "_id": "c22f199f-4cdb-4175-9131-4bab3c504ec3",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Arjun Mentor",
+    "email": "mentor4@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "mentor"
+  },
+  {
+    "_id": "afc9069a-55f6-41f2-b6c7-57c984c76d1d",
+    "createdAt": "2026-06-06T06:51:45.573Z",
+    "updatedAt": "2026-06-06T06:51:45.573Z",
+    "name": "Naina Mentor",
+    "email": "mentor5@example.com",
+    "password": "$2a$12$smnRkQk1RcY/GZmfC8oX3eXGlvcpMP8iYCsD8ijfn/HUTi0iB5HAi",
+    "role": "mentor"
+  }
+]

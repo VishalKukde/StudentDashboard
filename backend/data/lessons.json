@@ -1,0 +1,1002 @@
+[
+  {
+    "_id": "5b154f0a-eb92-4c0d-bf11-e5890460788d",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 1",
+    "duration": 20,
+    "order": 1,
+    "content": "Lesson content for React Foundations 1"
+  },
+  {
+    "_id": "fe7b2845-35ee-4f85-bf17-dcbb7cff6e9c",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 2",
+    "duration": 21,
+    "order": 2,
+    "content": "Lesson content for React Foundations 2"
+  },
+  {
+    "_id": "3dd04845-769c-4f2a-aa44-152f5121ccad",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 3",
+    "duration": 22,
+    "order": 3,
+    "content": "Lesson content for React Foundations 3"
+  },
+  {
+    "_id": "6995d8b5-fafc-4574-93c7-da8ae69764d5",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 4",
+    "duration": 23,
+    "order": 4,
+    "content": "Lesson content for React Foundations 4"
+  },
+  {
+    "_id": "1ef4301e-7615-4011-b1a6-cddec97a16cb",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 5",
+    "duration": 24,
+    "order": 5,
+    "content": "Lesson content for React Foundations 5"
+  },
+  {
+    "_id": "b36c8dda-3ebc-4189-97c4-00e440e0c056",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 6",
+    "duration": 25,
+    "order": 6,
+    "content": "Lesson content for React Foundations 6"
+  },
+  {
+    "_id": "88102215-2cd1-41e8-92e0-5a9b3edd9aaa",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 7",
+    "duration": 26,
+    "order": 7,
+    "content": "Lesson content for React Foundations 7"
+  },
+  {
+    "_id": "0a0be42f-2682-469b-8860-77ddf7e86460",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 8",
+    "duration": 27,
+    "order": 8,
+    "content": "Lesson content for React Foundations 8"
+  },
+  {
+    "_id": "b7e8ac84-9e29-4445-b342-ad297dbdb7e3",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 9",
+    "duration": 28,
+    "order": 9,
+    "content": "Lesson content for React Foundations 9"
+  },
+  {
+    "_id": "4950a219-3acc-437d-951c-442690dcac7e",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "0a0f9036-da0e-4fc7-a625-07b5a19c3dbb",
+    "title": "React Foundations Lesson 10",
+    "duration": 29,
+    "order": 10,
+    "content": "Lesson content for React Foundations 10"
+  },
+  {
+    "_id": "796e5814-d5ef-4e95-9549-984c44ad47c6",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 1",
+    "duration": 21,
+    "order": 1,
+    "content": "Lesson content for Node.js Essentials 1"
+  },
+  {
+    "_id": "eec1727a-ef14-4479-829e-ab07b222c47f",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 2",
+    "duration": 22,
+    "order": 2,
+    "content": "Lesson content for Node.js Essentials 2"
+  },
+  {
+    "_id": "df1368e8-56c1-43f9-9da8-466cf7fcaa57",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 3",
+    "duration": 23,
+    "order": 3,
+    "content": "Lesson content for Node.js Essentials 3"
+  },
+  {
+    "_id": "364ebaca-a28d-4b87-b2e5-afa870f85797",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 4",
+    "duration": 24,
+    "order": 4,
+    "content": "Lesson content for Node.js Essentials 4"
+  },
+  {
+    "_id": "c060ccde-0668-41a0-8a73-68498dac67ba",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 5",
+    "duration": 25,
+    "order": 5,
+    "content": "Lesson content for Node.js Essentials 5"
+  },
+  {
+    "_id": "f70e0544-02de-4038-a2bd-18fdadbea627",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 6",
+    "duration": 26,
+    "order": 6,
+    "content": "Lesson content for Node.js Essentials 6"
+  },
+  {
+    "_id": "78bbd0e9-e3aa-4950-b5f1-1488ef2a1e2c",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 7",
+    "duration": 27,
+    "order": 7,
+    "content": "Lesson content for Node.js Essentials 7"
+  },
+  {
+    "_id": "3f99f7f7-ec75-4472-8839-5d10999f2535",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 8",
+    "duration": 28,
+    "order": 8,
+    "content": "Lesson content for Node.js Essentials 8"
+  },
+  {
+    "_id": "3edf90fa-5db1-48b5-8220-360c68546515",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 9",
+    "duration": 29,
+    "order": 9,
+    "content": "Lesson content for Node.js Essentials 9"
+  },
+  {
+    "_id": "8035bd49-d56e-4307-b6d6-d5b3c1a1313e",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "a2d1038a-8311-40ca-8090-85c5f24676b2",
+    "title": "Node.js Essentials Lesson 10",
+    "duration": 30,
+    "order": 10,
+    "content": "Lesson content for Node.js Essentials 10"
+  },
+  {
+    "_id": "ea88a19d-e83e-4c9e-aa21-8c7a33ec4b5c",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 1",
+    "duration": 22,
+    "order": 1,
+    "content": "Lesson content for MongoDB Mastery 1"
+  },
+  {
+    "_id": "e494af77-9aa4-49cf-8283-c016a54239ae",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 2",
+    "duration": 23,
+    "order": 2,
+    "content": "Lesson content for MongoDB Mastery 2"
+  },
+  {
+    "_id": "5ba1ab2f-aeba-41a5-b98e-865686bd894d",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 3",
+    "duration": 24,
+    "order": 3,
+    "content": "Lesson content for MongoDB Mastery 3"
+  },
+  {
+    "_id": "bbf40ac8-6a61-4235-9a5c-9cb9adfd3425",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 4",
+    "duration": 25,
+    "order": 4,
+    "content": "Lesson content for MongoDB Mastery 4"
+  },
+  {
+    "_id": "ed0063ad-86b3-4b71-affc-dd9c60d04c62",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 5",
+    "duration": 26,
+    "order": 5,
+    "content": "Lesson content for MongoDB Mastery 5"
+  },
+  {
+    "_id": "06ed079c-dca6-4473-9662-0ac33ba4da26",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 6",
+    "duration": 27,
+    "order": 6,
+    "content": "Lesson content for MongoDB Mastery 6"
+  },
+  {
+    "_id": "c233b617-9f76-4545-887e-d5746e779f11",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 7",
+    "duration": 28,
+    "order": 7,
+    "content": "Lesson content for MongoDB Mastery 7"
+  },
+  {
+    "_id": "f1f93c23-9632-4f9b-a60f-49cb6b7d82b9",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 8",
+    "duration": 29,
+    "order": 8,
+    "content": "Lesson content for MongoDB Mastery 8"
+  },
+  {
+    "_id": "2253609c-5fd7-4ae3-9137-3493db0a9375",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 9",
+    "duration": 30,
+    "order": 9,
+    "content": "Lesson content for MongoDB Mastery 9"
+  },
+  {
+    "_id": "aaf9088d-4854-4ecc-99c0-4553e71ace70",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "e6da1cca-291f-48fd-95c6-e69c9634fbd5",
+    "title": "MongoDB Mastery Lesson 10",
+    "duration": 31,
+    "order": 10,
+    "content": "Lesson content for MongoDB Mastery 10"
+  },
+  {
+    "_id": "ceecbb4d-d0a3-4e55-b01f-d01a271ff137",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 1",
+    "duration": 23,
+    "order": 1,
+    "content": "Lesson content for Express API Design 1"
+  },
+  {
+    "_id": "093a6992-ebf0-4e9e-961b-e415714969e0",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 2",
+    "duration": 24,
+    "order": 2,
+    "content": "Lesson content for Express API Design 2"
+  },
+  {
+    "_id": "0b246bab-4b0e-445c-b36f-87e0c15117cd",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 3",
+    "duration": 25,
+    "order": 3,
+    "content": "Lesson content for Express API Design 3"
+  },
+  {
+    "_id": "7984cc82-a2e9-4da8-b4dd-37b6f6403cb0",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 4",
+    "duration": 26,
+    "order": 4,
+    "content": "Lesson content for Express API Design 4"
+  },
+  {
+    "_id": "45fa974d-8354-41ec-a56f-b53cfad9cc43",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 5",
+    "duration": 27,
+    "order": 5,
+    "content": "Lesson content for Express API Design 5"
+  },
+  {
+    "_id": "d1b67dbd-d0a0-4536-9c0d-fd7832c725b2",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 6",
+    "duration": 28,
+    "order": 6,
+    "content": "Lesson content for Express API Design 6"
+  },
+  {
+    "_id": "9de381bc-bad8-4476-8cbc-c83d999c1166",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 7",
+    "duration": 29,
+    "order": 7,
+    "content": "Lesson content for Express API Design 7"
+  },
+  {
+    "_id": "dad7c213-f43e-4a07-b066-38c14e93a208",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 8",
+    "duration": 30,
+    "order": 8,
+    "content": "Lesson content for Express API Design 8"
+  },
+  {
+    "_id": "50c7d67a-59e5-4630-944d-57dd8dc8924b",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 9",
+    "duration": 31,
+    "order": 9,
+    "content": "Lesson content for Express API Design 9"
+  },
+  {
+    "_id": "0ba29431-ce7a-446a-a221-cf91a4d7b0f6",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "91f4b571-a0a7-4889-b862-fac8603db2b2",
+    "title": "Express API Design Lesson 10",
+    "duration": 32,
+    "order": 10,
+    "content": "Lesson content for Express API Design 10"
+  },
+  {
+    "_id": "515d56f3-bcc1-4c45-b36e-1d3e3a4e09bb",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 1",
+    "duration": 24,
+    "order": 1,
+    "content": "Lesson content for JavaScript for Dashboards 1"
+  },
+  {
+    "_id": "7b37e502-2f12-4a16-9534-006d7bf6e501",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 2",
+    "duration": 25,
+    "order": 2,
+    "content": "Lesson content for JavaScript for Dashboards 2"
+  },
+  {
+    "_id": "e66ab35a-ae38-46d6-870f-0049668c180e",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 3",
+    "duration": 26,
+    "order": 3,
+    "content": "Lesson content for JavaScript for Dashboards 3"
+  },
+  {
+    "_id": "ed8b8e82-5a20-469f-818e-b661c35c8f9c",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 4",
+    "duration": 27,
+    "order": 4,
+    "content": "Lesson content for JavaScript for Dashboards 4"
+  },
+  {
+    "_id": "4925f196-4993-4a41-a552-ad057a58788b",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 5",
+    "duration": 28,
+    "order": 5,
+    "content": "Lesson content for JavaScript for Dashboards 5"
+  },
+  {
+    "_id": "31068f94-c42d-4b58-a321-dd442c162b7b",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 6",
+    "duration": 29,
+    "order": 6,
+    "content": "Lesson content for JavaScript for Dashboards 6"
+  },
+  {
+    "_id": "1c09082f-9a65-43d9-8d76-75b47c7fe890",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 7",
+    "duration": 30,
+    "order": 7,
+    "content": "Lesson content for JavaScript for Dashboards 7"
+  },
+  {
+    "_id": "a60b59a5-7904-4c33-91dd-7e81f45ef351",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 8",
+    "duration": 31,
+    "order": 8,
+    "content": "Lesson content for JavaScript for Dashboards 8"
+  },
+  {
+    "_id": "43b99f61-96e1-40e8-90a1-bc94beb1104c",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 9",
+    "duration": 32,
+    "order": 9,
+    "content": "Lesson content for JavaScript for Dashboards 9"
+  },
+  {
+    "_id": "f69be897-84bb-44f0-bcd6-9894ddbdf6f3",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "6762db4b-1b5a-4e95-81b8-9a0eadbabd77",
+    "title": "JavaScript for Dashboards Lesson 10",
+    "duration": 33,
+    "order": 10,
+    "content": "Lesson content for JavaScript for Dashboards 10"
+  },
+  {
+    "_id": "69aded14-e482-4224-9733-732ce7998e3e",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 1",
+    "duration": 25,
+    "order": 1,
+    "content": "Lesson content for Data Visualization with Recharts 1"
+  },
+  {
+    "_id": "100e6d31-6dff-4845-a8b8-3011343be165",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 2",
+    "duration": 26,
+    "order": 2,
+    "content": "Lesson content for Data Visualization with Recharts 2"
+  },
+  {
+    "_id": "93618d15-20e8-473b-9320-6701ed6da266",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 3",
+    "duration": 27,
+    "order": 3,
+    "content": "Lesson content for Data Visualization with Recharts 3"
+  },
+  {
+    "_id": "bc368ee5-e6cd-4a40-8289-6398c16a12c2",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 4",
+    "duration": 28,
+    "order": 4,
+    "content": "Lesson content for Data Visualization with Recharts 4"
+  },
+  {
+    "_id": "551cf1b6-f266-422d-b2b2-2515bf4f4d1f",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 5",
+    "duration": 29,
+    "order": 5,
+    "content": "Lesson content for Data Visualization with Recharts 5"
+  },
+  {
+    "_id": "7b18f2bd-ae04-4c71-b0eb-940d274934aa",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 6",
+    "duration": 30,
+    "order": 6,
+    "content": "Lesson content for Data Visualization with Recharts 6"
+  },
+  {
+    "_id": "dbd655b8-ad87-4b85-b8cc-bc53a0b952c9",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 7",
+    "duration": 31,
+    "order": 7,
+    "content": "Lesson content for Data Visualization with Recharts 7"
+  },
+  {
+    "_id": "646a7db1-b8ab-42a3-a5fc-c22be100a4b5",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 8",
+    "duration": 32,
+    "order": 8,
+    "content": "Lesson content for Data Visualization with Recharts 8"
+  },
+  {
+    "_id": "47dd6cb0-c781-4955-87d9-141b67144bcb",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 9",
+    "duration": 33,
+    "order": 9,
+    "content": "Lesson content for Data Visualization with Recharts 9"
+  },
+  {
+    "_id": "9f5d16be-498a-43b6-b092-bffe2ecff0e0",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "d4b189f2-bbc0-4c62-bd15-8a186da548b5",
+    "title": "Data Visualization with Recharts Lesson 10",
+    "duration": 34,
+    "order": 10,
+    "content": "Lesson content for Data Visualization with Recharts 10"
+  },
+  {
+    "_id": "7438e312-79e7-491f-aae2-8c4043b90073",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 1",
+    "duration": 26,
+    "order": 1,
+    "content": "Lesson content for Authentication and Security 1"
+  },
+  {
+    "_id": "241429de-9df4-4666-8bdd-4061feee3316",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 2",
+    "duration": 27,
+    "order": 2,
+    "content": "Lesson content for Authentication and Security 2"
+  },
+  {
+    "_id": "513a2232-0031-4921-ba2d-6beceff9d196",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 3",
+    "duration": 28,
+    "order": 3,
+    "content": "Lesson content for Authentication and Security 3"
+  },
+  {
+    "_id": "f9036858-9219-4e02-8254-ba748e746917",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 4",
+    "duration": 29,
+    "order": 4,
+    "content": "Lesson content for Authentication and Security 4"
+  },
+  {
+    "_id": "a0bb3689-a4e1-4473-8b5e-cbfa3f462dac",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 5",
+    "duration": 30,
+    "order": 5,
+    "content": "Lesson content for Authentication and Security 5"
+  },
+  {
+    "_id": "0f22b7a1-bd61-4032-bfea-5d82526243eb",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 6",
+    "duration": 31,
+    "order": 6,
+    "content": "Lesson content for Authentication and Security 6"
+  },
+  {
+    "_id": "dad918e1-b28e-4587-b575-492913222834",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 7",
+    "duration": 32,
+    "order": 7,
+    "content": "Lesson content for Authentication and Security 7"
+  },
+  {
+    "_id": "055bae8c-1e84-4293-b22f-a85569f42076",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 8",
+    "duration": 33,
+    "order": 8,
+    "content": "Lesson content for Authentication and Security 8"
+  },
+  {
+    "_id": "6e2183bc-36f8-4b35-a646-58918f374226",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 9",
+    "duration": 34,
+    "order": 9,
+    "content": "Lesson content for Authentication and Security 9"
+  },
+  {
+    "_id": "002fc645-6b64-4a10-9d13-b40119ff9e39",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "bbfe762a-6034-4845-a284-7228035dea68",
+    "title": "Authentication and Security Lesson 10",
+    "duration": 35,
+    "order": 10,
+    "content": "Lesson content for Authentication and Security 10"
+  },
+  {
+    "_id": "f81bc8ab-1e4a-41d9-8660-98efa88467e6",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 1",
+    "duration": 27,
+    "order": 1,
+    "content": "Lesson content for MERN Project Architecture 1"
+  },
+  {
+    "_id": "c68fae91-b8a2-43ae-8993-7e003366f298",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 2",
+    "duration": 28,
+    "order": 2,
+    "content": "Lesson content for MERN Project Architecture 2"
+  },
+  {
+    "_id": "1e735ec7-a996-45f6-b497-e53dfbe02992",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 3",
+    "duration": 29,
+    "order": 3,
+    "content": "Lesson content for MERN Project Architecture 3"
+  },
+  {
+    "_id": "e9d36d99-2aef-4157-9bdd-c908dd8681a9",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 4",
+    "duration": 30,
+    "order": 4,
+    "content": "Lesson content for MERN Project Architecture 4"
+  },
+  {
+    "_id": "44054e0d-046d-49a6-bc81-6a02289007b9",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 5",
+    "duration": 31,
+    "order": 5,
+    "content": "Lesson content for MERN Project Architecture 5"
+  },
+  {
+    "_id": "5c326e4a-c3b0-4522-834f-7f37a20cb9f8",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 6",
+    "duration": 32,
+    "order": 6,
+    "content": "Lesson content for MERN Project Architecture 6"
+  },
+  {
+    "_id": "9a53bbd5-3d8e-487b-b426-4c29c7791428",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 7",
+    "duration": 33,
+    "order": 7,
+    "content": "Lesson content for MERN Project Architecture 7"
+  },
+  {
+    "_id": "0bff22ff-3104-47e2-a5aa-4a80e5be8769",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 8",
+    "duration": 34,
+    "order": 8,
+    "content": "Lesson content for MERN Project Architecture 8"
+  },
+  {
+    "_id": "f16498f6-e22c-412d-9161-0d58e43a313a",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 9",
+    "duration": 35,
+    "order": 9,
+    "content": "Lesson content for MERN Project Architecture 9"
+  },
+  {
+    "_id": "4c3a02f7-123b-4987-bba0-bcac7b98ac52",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "2b4a801d-f966-4c20-a9c0-9910dc87dc56",
+    "title": "MERN Project Architecture Lesson 10",
+    "duration": 36,
+    "order": 10,
+    "content": "Lesson content for MERN Project Architecture 10"
+  },
+  {
+    "_id": "febb4967-f214-4ed0-a8de-81f11504d882",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 1",
+    "duration": 28,
+    "order": 1,
+    "content": "Lesson content for Testing Web Apps 1"
+  },
+  {
+    "_id": "b2eb1bb1-b3dd-4170-b681-6a1cec3a99c0",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 2",
+    "duration": 29,
+    "order": 2,
+    "content": "Lesson content for Testing Web Apps 2"
+  },
+  {
+    "_id": "70e70d0c-b103-436b-b94f-7afd753f7d4a",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 3",
+    "duration": 30,
+    "order": 3,
+    "content": "Lesson content for Testing Web Apps 3"
+  },
+  {
+    "_id": "9a2b6e35-2924-4d1d-b120-9f8336d3aa5e",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 4",
+    "duration": 31,
+    "order": 4,
+    "content": "Lesson content for Testing Web Apps 4"
+  },
+  {
+    "_id": "672fcecd-8073-49f8-99a4-31024e3ddef4",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 5",
+    "duration": 32,
+    "order": 5,
+    "content": "Lesson content for Testing Web Apps 5"
+  },
+  {
+    "_id": "dcff66bf-4b07-4f0d-9300-5c596448213b",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 6",
+    "duration": 33,
+    "order": 6,
+    "content": "Lesson content for Testing Web Apps 6"
+  },
+  {
+    "_id": "0c7e398a-cd11-4f9a-bc73-1ad00dc23537",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 7",
+    "duration": 34,
+    "order": 7,
+    "content": "Lesson content for Testing Web Apps 7"
+  },
+  {
+    "_id": "ca93a01e-0671-44c7-891f-6d9c6747afa6",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 8",
+    "duration": 35,
+    "order": 8,
+    "content": "Lesson content for Testing Web Apps 8"
+  },
+  {
+    "_id": "24b0daf0-7126-44cf-bd2e-8445b2f7c987",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 9",
+    "duration": 36,
+    "order": 9,
+    "content": "Lesson content for Testing Web Apps 9"
+  },
+  {
+    "_id": "728f13c3-f065-43be-a78f-1b7436620350",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "dfc4ef9b-541c-494a-b021-b3c5f5e0c21f",
+    "title": "Testing Web Apps Lesson 10",
+    "duration": 37,
+    "order": 10,
+    "content": "Lesson content for Testing Web Apps 10"
+  },
+  {
+    "_id": "e1b36b9f-8f19-48a0-970e-0c661ea61da5",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 1",
+    "duration": 29,
+    "order": 1,
+    "content": "Lesson content for Deployment and Monitoring 1"
+  },
+  {
+    "_id": "3926e7d2-61c8-460e-9e71-879c051af30c",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 2",
+    "duration": 30,
+    "order": 2,
+    "content": "Lesson content for Deployment and Monitoring 2"
+  },
+  {
+    "_id": "c74b0479-9c03-4f37-9437-51eb56d9e144",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 3",
+    "duration": 31,
+    "order": 3,
+    "content": "Lesson content for Deployment and Monitoring 3"
+  },
+  {
+    "_id": "dbf981a4-6e58-4adb-9e5e-7f935bc4546b",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 4",
+    "duration": 32,
+    "order": 4,
+    "content": "Lesson content for Deployment and Monitoring 4"
+  },
+  {
+    "_id": "9cfb9044-0e7f-40ec-8644-da914d2d7248",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 5",
+    "duration": 33,
+    "order": 5,
+    "content": "Lesson content for Deployment and Monitoring 5"
+  },
+  {
+    "_id": "3cde5de1-fa83-4053-8d26-3affc34e27fe",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 6",
+    "duration": 34,
+    "order": 6,
+    "content": "Lesson content for Deployment and Monitoring 6"
+  },
+  {
+    "_id": "b2bbd228-67e4-412c-9def-94460ee07f5e",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 7",
+    "duration": 35,
+    "order": 7,
+    "content": "Lesson content for Deployment and Monitoring 7"
+  },
+  {
+    "_id": "e3a75f95-1ca4-4816-b9fd-0fa852850eb4",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 8",
+    "duration": 36,
+    "order": 8,
+    "content": "Lesson content for Deployment and Monitoring 8"
+  },
+  {
+    "_id": "c24c96fd-0b15-4f3b-a4ed-7bd8f7ab1f00",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 9",
+    "duration": 37,
+    "order": 9,
+    "content": "Lesson content for Deployment and Monitoring 9"
+  },
+  {
+    "_id": "5911bdfe-ca49-4ee7-9955-aa27a28cbc21",
+    "createdAt": "2026-06-06T06:51:45.577Z",
+    "updatedAt": "2026-06-06T06:51:45.577Z",
+    "courseId": "c23c7a80-03ea-4219-9f19-d28e2dfc5d38",
+    "title": "Deployment and Monitoring Lesson 10",
+    "duration": 38,
+    "order": 10,
+    "content": "Lesson content for Deployment and Monitoring 10"
+  }
+]

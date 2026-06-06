@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="64" x2="432" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="160" y1="160" x2="352" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#DBEAFE"/>
+    </linearGradient>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#bg)"/>
+  <rect x="120" y="132" width="272" height="248" rx="44" fill="white" fill-opacity="0.14"/>
+  <rect x="150" y="178" width="56" height="148" rx="18" fill="url(#accent)"/>
+  <rect x="228" y="214" width="56" height="112" rx="18" fill="url(#accent)" fill-opacity="0.92"/>
+  <rect x="306" y="248" width="56" height="78" rx="18" fill="url(#accent)" fill-opacity="0.82"/>
+  <path d="M160 146C160 136.059 168.059 128 178 128H334C343.941 128 352 136.059 352 146V150C352 159.941 343.941 168 334 168H178C168.059 168 160 159.941 160 150V146Z" fill="white" fill-opacity="0.22"/>
+  <path d="M178 392L236 334L275 370L342 294" stroke="#F8FAFC" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M325 294H342V311" stroke="#F8FAFC" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="360" cy="140" r="18" fill="#DBEAFE"/>
+  <circle cx="150" cy="390" r="14" fill="#DBEAFE" fill-opacity="0.75"/>
+</svg>
