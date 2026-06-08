@@ -1,33 +1,29 @@
-const asyncHandler = require("express-async-handler");
-const ApiError = require("../utils/apiError");
-const { findById, findMany } = require("../store");
+import asyncHandler from "express-async-handler";
+import ApiError from "../utils/apiError.js";
+import Course from "../models/Course.js";
+import Lesson from "../models/Lesson.js";
 
-const getCourses = asyncHandler(async (_req, res) => {
-  const courses = await findMany("courses", () => true);
-  const lessons = await findMany("lessons", () => true);
-  const lessonsCountMap = lessons.reduce((acc, lesson) => {
-    acc[lesson.courseId] = (acc[lesson.courseId] || 0) + 1;
-    return acc;
-  }, {});
+export const getCourses = asyncHandler(async (_req, res) => {
+  const courses = await Course.find().lean();
 
-  res.json({
-    courses: courses.map((course) => ({
-      ...course,
-      lessonsCount: lessonsCountMap[course._id] || 0
-    }))
-  });
+  // Get lesson counts for each course
+  const coursesWithCounts = await Promise.all(
+    courses.map(async (course) => {
+      const lessonsCount = await Lesson.countDocuments({ courseId: course._id });
+      return { ...course, lessonsCount };
+    })
+  );
+
+  res.json({ courses: coursesWithCounts });
 });
 
-const getCourseById = asyncHandler(async (req, res) => {
-  const course = await findById("courses", req.params.id);
+export const getCourseById = asyncHandler(async (req, res) => {
+  const course = await Course.findById(req.params.id).lean();
   if (!course) {
     throw new ApiError(404, "Course not found");
   }
 
-  const lessons = await findMany("lessons", (lesson) => String(lesson.courseId) === String(req.params.id));
-  lessons.sort((a, b) => (a.order || 0) - (b.order || 0));
+  const lessons = await Lesson.find({ courseId: req.params.id }).sort({ order: 1 }).lean();
 
   res.json({ course, lessons });
 });
-
-module.exports = { getCourses, getCourseById };

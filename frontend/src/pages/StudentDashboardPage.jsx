@@ -7,33 +7,45 @@ import LineTrendChart from "../components/LineTrendChart";
 import DonutChart from "../components/DonutChart";
 import CourseProgressTable from "../components/CourseProgressTable";
 import RecommendationPanel from "../components/RecommendationPanel";
+import ActivityForm from "../components/ActivityForm";
 
 const StudentDashboardPage = () => {
   const [overview, setOverview] = useState(null);
+  const [courses, setCourses] = useState([]);
   const [progress, setProgress] = useState([]);
   const [trend, setTrend] = useState([]);
   const [distribution, setDistribution] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
 
+  const loadData = async () => {
+    const [overviewRes, coursesRes, progressRes, trendRes, distRes, recommendationsRes] = await Promise.all([
+      api.get("/analytics/overview"),
+      api.get("/courses"),
+      api.get("/analytics/progress"),
+      api.get("/analytics/timeseries?range=7d"),
+      api.get("/analytics/distribution"),
+      api.get("/analytics/recommendations")
+    ]);
+
+    setOverview(overviewRes.data);
+    setCourses(coursesRes.data.courses);
+    setProgress(progressRes.data.progress);
+    setTrend(trendRes.data.data.map((item) => ({ day: item._id.day, timeSpent: item.totalTimeSpent })));
+    setDistribution(distRes.data.distribution);
+    setRecommendations(recommendationsRes.data.recommendations);
+  };
+
   useEffect(() => {
-    const load = async () => {
-      const [overviewRes, progressRes, trendRes, distRes, recommendationsRes] = await Promise.all([
-        api.get("/analytics/overview"),
-        api.get("/analytics/progress"),
-        api.get("/analytics/timeseries?range=7d"),
-        api.get("/analytics/distribution"),
-        api.get("/analytics/recommendations")
-      ]);
-
-      setOverview(overviewRes.data);
-      setProgress(progressRes.data.progress);
-      setTrend(trendRes.data.data.map((item) => ({ day: item._id.day, timeSpent: item.totalTimeSpent })));
-      setDistribution(distRes.data.distribution);
-      setRecommendations(recommendationsRes.data.recommendations);
-    };
-
-    load();
+    loadData();
   }, []);
+
+  const handleActivitySubmit = async (payload) => {
+    await api.post("/activities", {
+      ...payload,
+      activityDate: new Date().toISOString()
+    });
+    loadData(); // Refresh stats
+  };
 
   return (
     <Layout>
@@ -44,6 +56,10 @@ const StudentDashboardPage = () => {
           <StatCard label="Time Spent" value={`${overview?.totalTimeSpent ?? "-"} min`} hint="Tracked activity minutes" />
           <StatCard label="Learning Streak" value={`${overview?.currentLearningStreak ?? "-"} days`} hint="Consecutive study days" />
         </section>
+
+        <SectionCard title="Quick Log Activity">
+          <ActivityForm onSubmit={handleActivitySubmit} courses={courses} />
+        </SectionCard>
 
         <section className="grid gap-6 xl:grid-cols-[1.7fr_1fr]">
           <SectionCard title="Study Trend">

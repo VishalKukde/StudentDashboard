@@ -1,10 +1,8 @@
-const { stringify } = require("csv-stringify/sync");
+import { stringify } from "csv-stringify/sync";
 
-const toCsv = (records, columns) =>
+export const toCsv = (records, columns) =>
   stringify(records, {
     header: true,
     columns,
     quoted: true
   });
-
-module.exports = { toCsv };

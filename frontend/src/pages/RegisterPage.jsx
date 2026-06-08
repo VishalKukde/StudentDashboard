@@ -11,8 +11,8 @@ const RegisterPage = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const user = await register(form);
-      navigate(user.role === "mentor" ? "/mentor" : "/dashboard");
+      await register(form);
+      navigate("/login");
     } catch (err) {
       setError(err?.response?.data?.message || "Unable to create account");
     }

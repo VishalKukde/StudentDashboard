@@ -1,8 +1,10 @@
-const router = require("express").Router();
-const { getCourses, getCourseById } = require("../controllers/courseController");
-const { protect } = require("../middleware/auth");
+import express from "express";
+import { getCourses, getCourseById } from "../controllers/courseController.js";
+import { protect } from "../middleware/auth.js";
+
+const router = express.Router();
 
 router.get("/", protect, getCourses);
 router.get("/:id", protect, getCourseById);
 
-module.exports = router;
+export default router;

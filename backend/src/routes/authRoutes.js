@@ -1,11 +1,16 @@
-const router = require("express").Router();
-const { register, login, profile } = require("../controllers/authController");
-const { protect } = require("../middleware/auth");
-const { validate } = require("../middleware/validate");
-const { validateAuth } = require("../validation/schemas");
+import express from "express";
+import { register, login, profile } from "../controllers/authController.js";
+import { protect } from "../middleware/auth.js";
+import { validate } from "../middleware/validate.js";
+import { validateRegister, validateLogin } from "../validation/schemas.js";
 
-router.post("/register", validate(validateAuth), register);
-router.post("/login", validate(validateAuth), login);
+const router = express.Router();
+
+router.post("/register", validate(validateRegister), register);
+router.post("/login", validate(validateLogin), login);
 router.get("/profile", protect, profile);
+router.post("/logout", (req, res) => {
+    res.json({ message: "Logged out successfully" });
+});
 
-module.exports = router;
+export default router;

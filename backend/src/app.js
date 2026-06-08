@@ -1,15 +1,15 @@
-const express = require("express");
-const cors = require("cors");
-const helmet = require("helmet");
-const morgan = require("morgan");
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
+import morgan from "morgan";
 
-const authRoutes = require("./routes/authRoutes");
-const courseRoutes = require("./routes/courseRoutes");
-const lessonRoutes = require("./routes/lessonRoutes");
-const activityRoutes = require("./routes/activityRoutes");
-const analyticsRoutes = require("./routes/analyticsRoutes");
-const exportRoutes = require("./routes/exportRoutes");
-const { notFound, errorHandler } = require("./middleware/errorHandler");
+import authRoutes from "./routes/authRoutes.js";
+import courseRoutes from "./routes/courseRoutes.js";
+import lessonRoutes from "./routes/lessonRoutes.js";
+import activityRoutes from "./routes/activityRoutes.js";
+import analyticsRoutes from "./routes/analyticsRoutes.js";
+import exportRoutes from "./routes/exportRoutes.js";
+import { notFound, errorHandler } from "./middleware/errorHandler.js";
 
 const app = express();
 
@@ -48,4 +48,4 @@ app.use("/api/exports", exportRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
-module.exports = app;
+export default app;

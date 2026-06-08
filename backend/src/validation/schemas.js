@@ -1,6 +1,6 @@
 const isEmail = (value = "") => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
-const validateAuth = (body = {}) => {
+export const validateRegister = (body = {}) => {
   const errors = [];
   const value = {
     name: typeof body.name === "string" ? body.name.trim() : "",
@@ -9,14 +9,27 @@ const validateAuth = (body = {}) => {
     role: body.role === "mentor" ? "mentor" : "student"
   };
 
-  if (!value.name && body.name !== undefined) errors.push("Name is required");
+  if (!value.name) errors.push("Name is required");
   if (!isEmail(value.email)) errors.push("A valid email is required");
   if (value.password.length < 8) errors.push("Password must be at least 8 characters");
 
   return { valid: errors.length === 0, errors, value };
 };
 
-const validateActivity = (body = {}) => {
+export const validateLogin = (body = {}) => {
+  const errors = [];
+  const value = {
+    email: typeof body.email === "string" ? body.email.trim().toLowerCase() : "",
+    password: typeof body.password === "string" ? body.password : ""
+  };
+
+  if (!isEmail(value.email)) errors.push("A valid email is required");
+  if (!value.password) errors.push("Password is required");
+
+  return { valid: errors.length === 0, errors, value };
+};
+
+export const validateActivity = (body = {}) => {
   const errors = [];
   const timeSpent = Number(body.timeSpent);
   const value = {
@@ -34,7 +47,7 @@ const validateActivity = (body = {}) => {
   return { valid: errors.length === 0, errors, value };
 };
 
-const validateCompleteLesson = (body = {}) => {
+export const validateCompleteLesson = (body = {}) => {
   const errors = [];
   const timeSpent = Number(body.timeSpent);
   const value = {
@@ -51,5 +64,3 @@ const validateCompleteLesson = (body = {}) => {
 
   return { valid: errors.length === 0, errors, value };
 };
-
-module.exports = { validateAuth, validateActivity, validateCompleteLesson };

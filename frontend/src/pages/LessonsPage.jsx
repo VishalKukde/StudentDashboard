@@ -54,7 +54,11 @@ const LessonsPage = () => {
     <Layout>
       <div className="space-y-6">
         <SectionCard title="Record Learning Activity">
-          <ActivityForm onSubmit={recordActivity} />
+          <ActivityForm
+            onSubmit={recordActivity}
+            courses={courses}
+            initialCourseId={selectedCourse?._id}
+          />
         </SectionCard>
         <SectionCard title="Courses">
           <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
@@ -62,11 +66,10 @@ const LessonsPage = () => {
               <button
                 key={course._id}
                 onClick={() => setSelectedCourse(course)}
-                className={`rounded-3xl border p-5 text-left transition ${
-                  selectedCourse?._id === course._id
-                    ? "border-sky-300 bg-sky-50"
-                    : "border-slate-200 bg-slate-50 hover:border-sky-200"
-                }`}
+                className={`rounded-3xl border p-5 text-left transition ${selectedCourse?._id === course._id
+                  ? "border-sky-300 bg-sky-50"
+                  : "border-slate-200 bg-slate-50 hover:border-sky-200"
+                  }`}
               >
                 <h3 className="text-lg font-semibold text-slate-900">{course.title}</h3>
                 <p className="mt-2 text-sm text-slate-600">{course.description}</p>

@@ -1,12 +1,19 @@
-const asyncHandler = require("express-async-handler");
-const { findMany } = require("../store");
-const { toCsv } = require("../utils/csv");
+import asyncHandler from "express-async-handler";
+import Progress from "../models/Progress.js";
+import Course from "../models/Course.js";
+import Lesson from "../models/Lesson.js";
+import Activity from "../models/Activity.js";
+import User from "../models/User.js";
+import { toCsv } from "../utils/csv.js";
 
-const exportProgress = asyncHandler(async (req, res) => {
+export const exportProgress = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
-  const progress = await findMany("progress", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
-  const courses = await findMany("courses", () => true);
-  const lessons = await findMany("lessons", () => true);
+  const filter = studentId ? { studentId } : {};
+
+  const progress = await Progress.find(filter).lean();
+  const courses = await Course.find().lean();
+  const lessons = await Lesson.find().lean();
+
   const courseMap = new Map(courses.map((course) => [String(course._id), course]));
   const lessonMap = new Map(lessons.map((lesson) => [String(lesson._id), lesson]));
 
@@ -32,9 +39,11 @@ const exportProgress = asyncHandler(async (req, res) => {
   res.send(csv);
 });
 
-const exportActivities = asyncHandler(async (req, res) => {
+export const exportActivities = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
-  const activities = await findMany("activities", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
+  const filter = studentId ? { studentId } : {};
+
+  const activities = await Activity.find(filter).lean();
 
   const csv = toCsv(
     activities.map((record) => ({
@@ -60,16 +69,16 @@ const exportActivities = asyncHandler(async (req, res) => {
   res.send(csv);
 });
 
-const exportMentorOverview = asyncHandler(async (_req, res) => {
-  const users = await findMany("users", (user) => user.role === "student");
-  const progress = await findMany("progress", () => true);
-  const activities = await findMany("activities", () => true);
-  const lessons = await findMany("lessons", () => true);
+export const exportMentorOverview = asyncHandler(async (_req, res) => {
+  const students = await User.find({ role: "student" }).lean();
+  const progress = await Progress.find().lean();
+  const activities = await Activity.find().lean();
+  const lessonsCount = await Lesson.countDocuments();
 
-  const rows = users.map((student) => {
+  const rows = students.map((student) => {
     const studentProgress = progress.filter((item) => String(item.studentId) === String(student._id));
     const completedLessons = studentProgress.filter((item) => item.completed).length;
-    const totalLessons = lessons.length;
+    const totalLessons = lessonsCount;
     const learningHours = activities
       .filter((item) => String(item.studentId) === String(student._id))
       .reduce((sum, item) => sum + Number(item.timeSpent || 0), 0) / 60;
@@ -98,5 +107,3 @@ const exportMentorOverview = asyncHandler(async (_req, res) => {
   res.attachment("mentor-overview.csv");
   res.send(csv);
 });
-
-module.exports = { exportProgress, exportActivities, exportMentorOverview };

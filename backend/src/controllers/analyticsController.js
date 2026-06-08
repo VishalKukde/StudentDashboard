@@ -1,14 +1,21 @@
-﻿const asyncHandler = require("express-async-handler");
-const { findMany } = require("../store");
-const { getCurrentStreak } = require("../utils/streak");
-const { getRecommendations } = require("../utils/recommendations");
+﻿import asyncHandler from "express-async-handler";
+import User from "../models/User.js";
+import Progress from "../models/Progress.js";
+import Activity from "../models/Activity.js";
+import Lesson from "../models/Lesson.js";
+import Course from "../models/Course.js";
+import { getCurrentStreak } from "../utils/streak.js";
+import { getRecommendations } from "../utils/recommendations.js";
 
 const toDateString = (date) => new Date(date).toISOString().slice(0, 10);
 
-const getOverview = asyncHandler(async (req, res) => {
+export const getOverview = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
-  const activities = await findMany("activities", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
-  const progress = await findMany("progress", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
+  const filter = studentId ? { studentId } : {};
+
+  const activities = await Activity.find(filter).lean();
+  const progress = await Progress.find(filter).lean();
+
   const completedLessons = progress.filter((item) => item.completed).length;
   const totalTimeSpent = activities.reduce((sum, item) => sum + Number(item.timeSpent || 0), 0);
 
@@ -20,11 +27,11 @@ const getOverview = asyncHandler(async (req, res) => {
   });
 });
 
-const getProgress = asyncHandler(async (req, res) => {
+export const getProgress = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
-  const courses = await findMany("courses", () => true);
-  const lessons = await findMany("lessons", () => true);
-  const progress = await findMany("progress", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
+  const courses = await Course.find().lean();
+  const lessons = await Lesson.find().lean();
+  const progress = await Progress.find(studentId ? { studentId } : {}).lean();
 
   const progressByCourse = courses.map((course) => {
     const courseLessons = lessons.filter((lesson) => String(lesson.courseId) === String(course._id));
@@ -45,18 +52,22 @@ const getProgress = asyncHandler(async (req, res) => {
   res.json({ progress: progressByCourse.filter((item) => item.totalLessons > 0) });
 });
 
-const getTimeSeries = asyncHandler(async (req, res) => {
+export const getTimeSeries = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
   const range = req.query.range || "7d";
   const limitDays = range === "30d" ? 30 : range === "90d" ? 90 : 7;
   const start = new Date();
   start.setDate(start.getDate() - limitDays + 1);
 
-  const activities = await findMany("activities", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
-  const filtered = activities.filter((item) => new Date(item.activityDate) >= start);
+  const filter = {
+    activityDate: { $gte: start }
+  };
+  if (studentId) filter.studentId = studentId;
+
+  const activities = await Activity.find(filter).lean();
   const buckets = new Map();
 
-  for (const activity of filtered) {
+  for (const activity of activities) {
     const day = toDateString(activity.activityDate);
     const current = buckets.get(day) || { _id: { day }, totalTimeSpent: 0, activities: 0 };
     current.totalTimeSpent += Number(activity.timeSpent || 0);
@@ -67,13 +78,14 @@ const getTimeSeries = asyncHandler(async (req, res) => {
   res.json({ range, data: [...buckets.values()].sort((a, b) => a._id.day.localeCompare(b._id.day)) });
 });
 
-const getDistribution = asyncHandler(async (req, res) => {
+export const getDistribution = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
-  const lessons = await findMany("lessons", () => true);
-  const progress = await findMany("progress", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
+  const lessonsCount = await Lesson.countDocuments();
+  const progress = await Progress.find(studentId ? { studentId } : {}).lean();
+
   const completed = progress.filter((item) => item.completed).length;
   const inProgress = progress.filter((item) => !item.completed).length;
-  const notStarted = Math.max(lessons.length - progress.length, 0);
+  const notStarted = Math.max(lessonsCount - progress.length, 0);
 
   res.json({
     distribution: [
@@ -84,16 +96,16 @@ const getDistribution = asyncHandler(async (req, res) => {
   });
 });
 
-const getMentorOverview = asyncHandler(async (_req, res) => {
-  const students = await findMany("users", (user) => user.role === "student");
-  const progress = await findMany("progress", () => true);
-  const activities = await findMany("activities", () => true);
-  const lessons = await findMany("lessons", () => true);
+export const getMentorOverview = asyncHandler(async (_req, res) => {
+  const students = await User.find({ role: "student" }).lean();
+  const progress = await Progress.find().lean();
+  const activities = await Activity.find().lean();
+  const lessonsCount = await Lesson.countDocuments();
 
   const studentRows = students.map((student) => {
     const studentProgress = progress.filter((item) => String(item.studentId) === String(student._id));
     const completedLessons = studentProgress.filter((item) => item.completed).length;
-    const totalLessons = lessons.length;
+    const totalLessons = lessonsCount;
     const learningHours = activities
       .filter((item) => String(item.studentId) === String(student._id))
       .reduce((sum, item) => sum + Number(item.timeSpent || 0), 0) / 60;
@@ -125,11 +137,11 @@ const getMentorOverview = asyncHandler(async (_req, res) => {
   });
 });
 
-const getRecommendationsForUser = asyncHandler(async (req, res) => {
+export const getRecommendationsForUser = asyncHandler(async (req, res) => {
   const studentId = req.user.role === "student" ? req.user.id : req.query.studentId;
-  const courses = await findMany("courses", () => true);
-  const lessons = await findMany("lessons", () => true);
-  const progress = await findMany("progress", studentId ? (item) => String(item.studentId) === String(studentId) : () => true);
+  const courses = await Course.find().lean();
+  const lessons = await Lesson.find().lean();
+  const progress = await Progress.find(studentId ? { studentId } : {}).lean();
 
   const recommendations = courses.map((course) => {
     const courseLessons = lessons.filter((lesson) => String(lesson.courseId) === String(course._id));
@@ -147,12 +159,3 @@ const getRecommendationsForUser = asyncHandler(async (req, res) => {
 
   res.json({ recommendations: recommendations.filter((item) => item.completionPercentage > 0 || item.suggestions.length) });
 });
-
-module.exports = {
-  getOverview,
-  getProgress,
-  getTimeSeries,
-  getDistribution,
-  getMentorOverview,
-  getRecommendationsForUser
-};

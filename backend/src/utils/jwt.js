@@ -1,6 +1,6 @@
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
 
-const signToken = (payload) => {
+export const signToken = (payload) => {
   if (!process.env.JWT_SECRET) {
     throw new Error("JWT_SECRET is not configured");
   }
@@ -10,6 +10,4 @@ const signToken = (payload) => {
   });
 };
 
-const verifyToken = (token) => jwt.verify(token, process.env.JWT_SECRET);
-
-module.exports = { signToken, verifyToken };
+export const verifyToken = (token) => jwt.verify(token, process.env.JWT_SECRET);

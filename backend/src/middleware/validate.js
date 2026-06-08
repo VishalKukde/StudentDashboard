@@ -1,6 +1,6 @@
-const ApiError = require("../utils/apiError");
+import ApiError from "../utils/apiError.js";
 
-const validate = (schema) => (req, _res, next) => {
+export const validate = (schema) => (req, _res, next) => {
   const result = schema(req.body);
   if (!result.valid) {
     return next(new ApiError(400, "Validation failed", result.errors));
@@ -8,5 +8,3 @@ const validate = (schema) => (req, _res, next) => {
   req.body = result.value;
   return next();
 };
-
-module.exports = { validate };

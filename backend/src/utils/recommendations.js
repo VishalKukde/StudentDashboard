@@ -1,4 +1,4 @@
-const getRecommendations = ({ completionRate = 0, currentCourse }) => {
+export const getRecommendations = ({ completionRate = 0, currentCourse }) => {
   if (completionRate >= 80) {
     return [
       `Great momentum on ${currentCourse || "your current course"}.`,
@@ -22,4 +22,4 @@ const getRecommendations = ({ completionRate = 0, currentCourse }) => {
   ];
 };
 
-module.exports = { getRecommendations };
+

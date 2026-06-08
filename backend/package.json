@@ -2,6 +2,7 @@
   "name": "student-dashboard-backend",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Production-ready MERN backend for a progressive student dashboard",
   "main": "src/server.js",
   "scripts": {
@@ -19,6 +20,7 @@
     "express-async-handler": "^1.2.0",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.6.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

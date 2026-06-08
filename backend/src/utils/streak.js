@@ -1,4 +1,4 @@
-const getCurrentStreak = (activities = []) => {
+export const getCurrentStreak = (activities = []) => {
   const uniqueDays = [
     ...new Set(
       activities
@@ -26,5 +26,3 @@ const getCurrentStreak = (activities = []) => {
 
   return streak;
 };
-
-module.exports = { getCurrentStreak };

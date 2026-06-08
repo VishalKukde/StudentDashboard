@@ -1,8 +1,8 @@
-const asyncHandler = require("express-async-handler");
-const bcrypt = require("bcryptjs");
-const ApiError = require("../utils/apiError");
-const { signToken } = require("../utils/jwt");
-const { createRecord, findOne } = require("../store");
+import asyncHandler from "express-async-handler";
+import bcrypt from "bcryptjs";
+import ApiError from "../utils/apiError.js";
+import { signToken } from "../utils/jwt.js";
+import User from "../models/User.js";
 
 const sanitizeUser = (user) => ({
   id: user._id,
@@ -11,30 +11,29 @@ const sanitizeUser = (user) => ({
   role: user.role
 });
 
-const register = asyncHandler(async (req, res) => {
+export const register = asyncHandler(async (req, res) => {
   const { name, email, password, role = "student" } = req.body;
-  const existing = await findOne("users", (user) => user.email === email);
 
+  const existing = await User.findOne({ email });
   if (existing) {
     throw new ApiError(409, "Email already registered");
   }
 
-  const hashedPassword = await bcrypt.hash(password, 12);
-  const user = await createRecord("users", { name, email, password: hashedPassword, role });
+  const user = await User.create({ name, email, password, role });
   const token = signToken({ id: user._id, role: user.role });
 
   res.status(201).json({ token, user: sanitizeUser(user) });
 });
 
-const login = asyncHandler(async (req, res) => {
+export const login = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
-  const user = await findOne("users", (entry) => entry.email === email);
+  const user = await User.findOne({ email }).select("+password");
 
   if (!user) {
     throw new ApiError(401, "Invalid credentials");
   }
 
-  const isMatch = await bcrypt.compare(password, user.password);
+  const isMatch = await user.comparePassword(password);
   if (!isMatch) {
     throw new ApiError(401, "Invalid credentials");
   }
@@ -43,8 +42,6 @@ const login = asyncHandler(async (req, res) => {
   res.json({ token, user: sanitizeUser(user) });
 });
 
-const profile = asyncHandler(async (req, res) => {
+export const profile = asyncHandler(async (req, res) => {
   res.json({ user: sanitizeUser(req.user) });
 });
-
-module.exports = { register, login, profile };
