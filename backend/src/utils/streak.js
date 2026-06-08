@@ -2,6 +2,7 @@ export const getCurrentStreak = (activities = []) => {
   const uniqueDays = [
     ...new Set(
       activities
+        .filter(activity => activity.activityDate)
         .map((activity) => new Date(activity.activityDate).toISOString().slice(0, 10))
         .sort()
     )

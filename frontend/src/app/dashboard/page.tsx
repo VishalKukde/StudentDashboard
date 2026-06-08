@@ -22,22 +22,32 @@ export default function StudentDashboardPage() {
   const [trend, setTrend] = useState<TrendPoint[]>([]);
   const [distribution, setDistribution] = useState<DistributionItem[]>([]);
   const [recommendations, setRecommendations] = useState<RecommendationItem[]>([]);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const load = async () => {
-      const [overviewRes, progressRes, trendRes, distRes, recommendationsRes] = await Promise.all([
-        api.get<DashboardOverview>("/analytics/overview"),
-        api.get<{ progress: CourseProgressItem[] }>("/analytics/progress"),
-        api.get<{ data: Array<{ _id: { day: string }; totalTimeSpent: number }> }>("/analytics/timeseries?range=7d"),
-        api.get<{ distribution: DistributionItem[] }>("/analytics/distribution"),
-        api.get<{ recommendations: RecommendationItem[] }>("/analytics/recommendations")
-      ]);
+      try {
+        setLoading(true);
+        const [overviewRes, progressRes, trendRes, distRes, recommendationsRes] = await Promise.all([
+          api.get<DashboardOverview>("/analytics/overview"),
+          api.get<{ progress: CourseProgressItem[] }>("/analytics/progress"),
+          api.get<{ data: Array<{ _id: { day: string }; totalTimeSpent: number }> }>("/analytics/timeseries?range=7d"),
+          api.get<{ distribution: DistributionItem[] }>("/analytics/distribution"),
+          api.get<{ recommendations: RecommendationItem[] }>("/analytics/recommendations")
+        ]);
 
-      setOverview(overviewRes.data);
-      setProgress(progressRes.data.progress);
-      setTrend(trendRes.data.data.map((item) => ({ day: item._id.day, timeSpent: item.totalTimeSpent })));
-      setDistribution(distRes.data.distribution);
-      setRecommendations(recommendationsRes.data.recommendations);
+        setOverview(overviewRes.data);
+        setProgress(progressRes.data.progress);
+        setTrend(trendRes.data.data.map((item) => ({ day: item._id.day, timeSpent: item.totalTimeSpent })));
+        setDistribution(distRes.data.distribution);
+        setRecommendations(recommendationsRes.data.recommendations);
+      } catch (err) {
+        console.error("Failed to load dashboard data", err);
+        setError("Failed to load dashboard data. Please refresh the page.");
+      } finally {
+        setLoading(false);
+      }
     };
 
     void load();
@@ -71,33 +81,45 @@ export default function StudentDashboardPage() {
             </div>
           </section>
 
-          <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <StatCard label="Total Courses Enrolled" value={overview?.totalCoursesEnrolled ?? "-"} hint="Active learning paths" />
-            <StatCard label="Completed Lessons" value={overview?.completedLessons ?? "-"} hint="Lessons finished so far" />
-            <StatCard label="Time Spent" value={`${overview?.totalTimeSpent ?? "-"} min`} hint="Tracked activity minutes" />
-            <StatCard label="Learning Streak" value={`${overview?.currentLearningStreak ?? "-"} days`} hint="Consecutive study days" />
-          </section>
+          {error && (
+            <div className="rounded-2xl border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-700">
+              {error}
+            </div>
+          )}
 
-          <SectionCard title="CSV Export">
-            <ExportActions />
-          </SectionCard>
+          {loading ? (
+            <div className="grid min-h-[30vh] place-items-center text-slate-500">Loading dashboard...</div>
+          ) : (
+            <>
+              <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                <StatCard label="Total Courses Enrolled" value={overview?.totalCoursesEnrolled ?? "-"} hint="Active learning paths" />
+                <StatCard label="Completed Lessons" value={overview?.completedLessons ?? "-"} hint="Lessons finished so far" />
+                <StatCard label="Time Spent" value={`${overview?.totalTimeSpent ?? "-"} min`} hint="Tracked activity minutes" />
+                <StatCard label="Learning Streak" value={`${overview?.currentLearningStreak ?? "-"} days`} hint="Consecutive study days" />
+              </section>
 
-          <section className="grid gap-6 xl:grid-cols-[1.7fr_1fr]">
-            <SectionCard title="Study Trend">
-              <LineTrendChart data={trend} />
-            </SectionCard>
-            <SectionCard title="Lesson Distribution">
-              <DonutChart data={distribution} />
-            </SectionCard>
-          </section>
+              <SectionCard title="CSV Export">
+                <ExportActions />
+              </SectionCard>
 
-          <SectionCard title="Course Progress">
-            <CourseProgressTable courses={progress} />
-          </SectionCard>
+              <section className="grid gap-6 xl:grid-cols-[1.7fr_1fr]">
+                <SectionCard title="Study Trend">
+                  <LineTrendChart data={trend} />
+                </SectionCard>
+                <SectionCard title="Lesson Distribution">
+                  <DonutChart data={distribution} />
+                </SectionCard>
+              </section>
 
-          <SectionCard title="Adaptive Recommendations">
-            <RecommendationPanel recommendations={recommendations} />
-          </SectionCard>
+              <SectionCard title="Course Progress">
+                <CourseProgressTable courses={progress} />
+              </SectionCard>
+
+              <SectionCard title="Adaptive Recommendations">
+                <RecommendationPanel recommendations={recommendations} />
+              </SectionCard>
+            </>
+          )}
         </div>
       </Layout>
     </ProtectedPage>
